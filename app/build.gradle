@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 android.defaultConfig.javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
 android {
     compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    //buildToolsVersion '27.0.3'
     lintOptions {
         checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
@@ -55,9 +55,9 @@ android {
         testImplementation 'junit:junit:4.12'
     }
 
-    useLibrary 'android.test.runner'
-
-    useLibrary 'android.test.base'
+//    useLibrary 'android.test.runner'
+//
+//    useLibrary 'android.test.base'
 }
 
 dependencies {
