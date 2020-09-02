@@ -50,5 +50,16 @@ android {
         implementation files('libs/SocialSDK_QQZone_1.jar')
         implementation 'com.android.support:support-v4:27.0.0'
         implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+        // Required for local unit tests (JUnit 4 framework)
+        testImplementation 'junit:junit:4.12'
     }
+
+    useLibrary 'android.test.runner'
+
+    useLibrary 'android.test.base'
+}
+
+dependencies {
+    androidTestImplementation 'junit:junit:4.12'
 }
